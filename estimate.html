@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Lawn Estimate | Tyler Jansen Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="form-page-body">
+
+    <!-- MINIMALIST FORM HEADER TO PREVENT DISTRACTIONS -->
+    <nav class="minimal-nav">
+        <a href="index.html" class="logo">← Back to Homepage</a>
+        <a href="tel:5551234567" class="nav-phone">📞 Help? (555) 123-4567</a>
+    </nav>
+
+    <main class="form-wrapper">
+        <div class="form-container">
+            <div class="form-header-box">
+                <h1>Request Your Free Estimate</h1>
+                <p>Fill out this quick 60-second form. Our team analyzes your property layout using digital mapping tools and emails your custom quote within 2 business hours!</p>
+            </div>
+
+            <!-- HIGH CONVERSION FORM LAYER -->
+            <form id="leadForm" action="thank-you.html" method="GET" class="optimized-form">
+                
+                <fieldset class="form-section">
+                    <legend>1. Project Details</legend>
+                    <div class="form-group">
+                        <label for="service">Select Primary Service Needed *</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>-- Choose an option --</option>
+                            <option value="weekly-mowing">Weekly Lawn Maintenance</option>
+                            <option value="biweekly-mowing">Bi-Weekly Lawn Maintenance</option>
+                            <option value="seasonal-cleanup">Full Yard Clean-Up / Leaf Removal</option>
+                            <option value="shrub-trimming">Hedge & Shrub Shading</option>
+                            <option value="other">Other / Custom Project</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="123 Main Street, Your Town">
+                        <small class="input-helper">We use satellite mapping to view your lawn size and save you an onsite consultation appointment.</small>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend>2. Your Contact Information</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <small class="input-helper">Your quote confirmation document is delivered here.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Special Notes or Instructions (Optional)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Example: Locked backyard gate, overgrown back corner, pets in yard, etc..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- SUBMIT TRIGGER WITH PSYCHOLOGICAL REASSURANCE -->
+                <div class="form-submit-wrapper">
+                    <button type="submit" class="submit-btn-large">Secure My Free Quote Now →</button>
+                    <p class="security-text">🔒 Your data is fully encrypted and never sold to third parties.</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- FORM SIDEBAR TRUST ASSETS -->
+        <aside class="form-sidebar">
+            <div class="sidebar-card">
+                <h3>What happens next?</h3>
+                <ul class="steps-list">
+                    <li>
+                        <span class="step-num">1</span>
+                        <div>
+                            <strong>Property Review</strong>
+                            <p>We analyze your lot sizes using local satellite layouts instantly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-num">2</span>
+                        <div>
+                            <strong>Price Proposal</strong>
+                            <p>A transparent line-item pricing sheet is emailed directly over.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-num">3</span>
+                        <div>
+                            <strong>Activation</strong>
+                            <p>Approve your plan digitally online and pick your regular target day.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-guarantee">
+                <h4>🛡️ Our Iron-Clad Guarantee</h4>
+                <p>"If you are not absolutely blown away with how clean, sharp, and neat your yard looks, we will return and recut it completely free of charge. No hassles, no arguments."</p>
+                <strong>— Tyler Jansen</strong>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
